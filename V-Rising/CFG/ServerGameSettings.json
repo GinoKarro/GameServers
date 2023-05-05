@@ -1,5 +1,5 @@
 ﻿{
-  "GameModeType": "PvP",
+  "GameModeType": "PvE",
   "CastleDamageMode": "Always",
   "SiegeWeaponHealth": "Normal",
   "PlayerDamageMode": "Always",
