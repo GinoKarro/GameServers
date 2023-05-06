@@ -11,7 +11,7 @@
   "BloodBoundEquipment": true,
   "TeleportBoundItems": true,
   "AllowGlobalChat": true,
-  "AllWaypointsUnlocked": false,
+  "AllWaypointsUnlocked": true,
   "FreeCastleClaim": false,
   "FreeCastleDestroy": false,
   "InactivityKillEnabled": true,
