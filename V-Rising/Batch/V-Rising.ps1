@@ -7,5 +7,5 @@ xcopy C:\#Code\GameServers\V-Rising\CFG\*.* C:\#servers\v-rising\VRisingServer_D
 xcopy C:\#Code\GameServers\V-Rising\Batch\V-Rising.ps1 C:\#servers\ /Y
 timeout 5 
 cls
-echo "Starting V Rising Dedicated Server on port : 9876,9877 - PRESS CTRL-C to exit"
+echo "Starting V Rising Dedicated Server on port : 9878,9879 - PRESS CTRL-C to exit"
 C:\#servers\v-rising\VRisingServer.exe -persistentDataPath .\v-rising\save-data -serverName "-=QC PVE=- Virgin Rising" -saveName "TuskWorld" -logFile ".\v-rising\logs\VRisingServer.log"
