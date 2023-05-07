@@ -1,8 +1,8 @@
 ﻿{
   "Name": "-=QC PVE=- Virgin Rising",
   "Description": "",
-  "Port": 9878,
-  "QueryPort": 9879,
+  "Port": 9876,
+  "QueryPort": 9877,
   "MaxConnectedUsers": 40,
   "MaxConnectedAdmins": 4,
   "ServerFps": 30,
