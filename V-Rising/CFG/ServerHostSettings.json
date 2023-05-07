@@ -1,12 +1,12 @@
-﻿{
-  "Name": "-=QC PVE=- Virgin Rising",
+{
+  "Name": "-=QC PVE=- Virgin Tusk Rising",
   "Description": "",
-  "Port": 9876,
-  "QueryPort": 9877,
+  "Port": 9877,
+  "QueryPort": 9879,
   "MaxConnectedUsers": 40,
   "MaxConnectedAdmins": 4,
   "ServerFps": 30,
-  "SaveName": "TuskWorld",
+  "SaveName": "TuskWorld007",
   "Password": "",
   "Secure": true,
   "ListOnMasterServer": true,
