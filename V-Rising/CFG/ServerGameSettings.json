@@ -9,7 +9,7 @@
   "RelicSpawnType": "Unique",
   "CanLootEnemyContainers": true,
   "BloodBoundEquipment": true,
-  "TeleportBoundItems": true,
+  "TeleportBoundItems": false,
   "AllowGlobalChat": true,
   "AllWaypointsUnlocked": true,
   "FreeCastleClaim": false,
