@@ -86,6 +86,9 @@ Set-Location C:\#Code\GameServers
 git pull origin main
 xcopy C:\#Code\GameServers\#Menu.ps1 C:\#servers\ /Y
 timeout 3
+xcopy C:\#Code\GameServers\V-Rising\Batch\*.ps1 C:\#servers\ /Y 
+xcopy C:\#Code\GameServers\NOS\Batch\*.ps1 C:\#servers\ /Y 
+timeout 3
 
 Set-Location C:\#servers
 Clear-Host
