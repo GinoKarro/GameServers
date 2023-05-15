@@ -121,72 +121,84 @@ Switch ($Select)
         Write-HostColored "Launching #green#New Server #installation."
         timeout 2
         ./Install-new-instance.ps1
+        exit
        }
     2 {
         Clear-Host
         Write-HostColored "Launching #green#V-Rising Server# + Updates."
         timeout 2
         ./V-Rising.ps1
+        exit
        }
     3 {
         Clear-Host
         Write-HostColored "Launching #green#Ark Server# + Cluster + Updates."
         timeout 2
         ./Ark.bat
+        exit
            }
     4 {
         Clear-Host
         Write-HostColored "Launching #green#7Days to die Server# + Updates."
         timeout 2
         ./Ark.bat
+        exit
            }
     5 {
         Clear-Host
         Write-HostColored "Launching #green#Frozen Flames Server# + Updates."
         timeout 2
         ./Frozen.bat
+        exit
       }  
     6 {
         Clear-Host
         Write-HostColored "Launching #green#Craftopia Server# + Updates."
         timeout 2
         ./craftopia.bat
+        exit
       }  
     7 {
         Clear-Host
         Write-HostColored "Launching #green#Core-Keeper Server# + Updates."
         timeout 2
         ./Core-Keeper.bat
+        exit
       }
     8 {
         Clear-Host
         Write-HostColored "Launching #green#Insurgency Sandstorm Server# + Updates."
         timeout 2
         ./Insurgency.bat
+        exit
       }  
     9 {
         Clear-Host
         Write-HostColored "Launching #green#Valheim Server# + Updates."
         timeout 2
         ./Valheim.ps1
+        exit
       }
     10 {
         Clear-Host
         Write-HostColored "Launching #green#The Forest Server# + Updates."
         timeout 2
         ./the-forest.ps1
+        exit
       } 
     11 {
         Clear-Host
         Write-HostColored "Launching #green#Rust Server# + Updates."
         timeout 2
         ./rust.ps1
+        exit
       }    
     12 {
         Clear-Host
         Write-HostColored "Launching #green#No One Survived Server# + Updates."
         timeout 2
         ./No-one-survived.ps1
+        exit
       }         
     }
 }
