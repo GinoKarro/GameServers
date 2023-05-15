@@ -1,11 +1,7 @@
----
-__Prerequisite__
+## Prerequisite
 
-- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
-  resize in browser.
-- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly
-  i18n with plurals support and easy syntax.
+Before Running the main script, you need to make sure that theese are installed :
 
-You will like those projects!
-
+- Microsoft Visual c++ 2015.
+- Microsoft Direct X end user.
 ---
