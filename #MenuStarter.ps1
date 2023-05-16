@@ -75,6 +75,7 @@ If (Test-Path -Path C:\#servers\Steamcmd\steamcmd.exe ) {
     timeout 2
     Clear-Host
     Write-HostColored "#cyan# Creating installation DIR # ." -NoNewline
+    timeout 2
     mkdir C:\#servers\Steamcmd\
     set-location C:\#servers\Steamcmd\
     Clear-Host
