@@ -68,7 +68,6 @@ xcopy C:\#Code\GameServers\NOS\Batch\*.ps1 C:\#servers\ /Y
 xcopy C:\#Code\GameServers\Frozen\Batch\*.ps1 C:\#servers\ /Y 
 xcopy C:\#Code\GameServers\7day\Batch\*.ps1 C:\#servers\ /Y 
 timeout 3
-
 Set-Location C:\#servers
 Clear-Host
 $MainMenu = {
