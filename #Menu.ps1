@@ -146,7 +146,7 @@ Switch ($Select)
         Clear-Host
         Write-HostColored "Launching #green#Frozen Flames Server# + Updates."
         timeout 2
-        ./Frozen.bat
+        ./Frozen.ps1
         exit
       }  
     6 {
