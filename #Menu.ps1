@@ -110,8 +110,9 @@ Switch ($Select)
     3 {
         Clear-Host
         Write-HostColored "Launching #green#Ark Server# + Cluster + Updates."
+        xcopy C:\#Code\GameServers\ark\Batch\*.ps1 C:\#servers\ /Y
         timeout 3
-        ./Ark.bat
+        ./Ark.ps1
         exit
            }
     4 {
