@@ -2,6 +2,7 @@ If (Test-Path -Path C:\#servers\Steamcmd\steamcmd.exe ) {
    Write-Host "SteamCMD Already installed." -NoNewline
 }else {
   #Download
+  mkdir C:\#servers\Steamcmd\
   set-location C:\#servers\Steamcmd\
   $url = "https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip"
   $destination = "C:\#servers\Steamcmd\steamcmd.zip"
@@ -18,10 +19,11 @@ If (Test-Path -Path C:\#servers\Steamcmd\steamcmd.exe ) {
 
   Unzip "C:\#servers\Steamcmd\steamcmd.zip" "C:\#servers\Steamcmd\"
 }
-Remove-Item -Path C:\#servers\Steamcmd\steamcmd.zip -Force
-$exepath = "C:\#servers\Steamcmd\steamcmd.exe"
-start-process $exepath && Stop-Process $exepath
-timeout 20
+Remove-Item -Path C:\#servers\Steamcmd\steamcmd.zip -Force  -ErrorAction SilentlyContinue
+start-process "C:\#Code\GameServers\UpdateSteamCMD.bat" -wait
+timeout 3
+taskkill /IM steamcmd.exe /F
+timeout 3
 Set-Location C:\#Code\GameServers
 git pull origin main
 timeout 2
