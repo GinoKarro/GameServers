@@ -2,7 +2,7 @@
 
 Simply run this command using Powershell :
 
-    // This Starts the menu launcher.
+    #This Starts the menu launcher.
     ./#MenuStarter.ps1
 
 Then, follow the instruction.
