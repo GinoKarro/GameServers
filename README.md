@@ -5,7 +5,7 @@ Manager. You can centralize all your server configs in github. It uses SteamCMD 
 and update the game servers.
 ***
 ## How to:
-
+---
 Simply clone the repo and run this command using Powershell :
 
     #This Starts the menu launcher.
