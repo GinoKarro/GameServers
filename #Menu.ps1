@@ -63,11 +63,6 @@ function Write-HostColored() {
 ########################################################################################
 ### Start of Script.
 
-xcopy C:\#Code\GameServers\V-Rising\Batch\*.ps1 C:\#servers\ /Y 
-xcopy C:\#Code\GameServers\NOS\Batch\*.ps1 C:\#servers\ /Y 
-xcopy C:\#Code\GameServers\Frozen\Batch\*.ps1 C:\#servers\ /Y 
-xcopy C:\#Code\GameServers\7day\Batch\*.ps1 C:\#servers\ /Y 
-timeout 3
 Set-Location C:\#servers
 Clear-Host
 $MainMenu = {
@@ -107,77 +102,81 @@ Switch ($Select)
     2 {
         Clear-Host
         Write-HostColored "Launching #green#V-Rising Server# + Updates."
-        timeout 2
+        xcopy C:\#Code\GameServers\V-Rising\Batch\*.ps1 C:\#servers\ /Y 
+        timeout 3
         ./V-Rising.ps1
         exit
        }
     3 {
         Clear-Host
         Write-HostColored "Launching #green#Ark Server# + Cluster + Updates."
-        timeout 2
+        timeout 3
         ./Ark.bat
         exit
            }
     4 {
         Clear-Host
         Write-HostColored "Launching #green#7Days to die Server# + Updates."
-        timeout 2
+        xcopy C:\#Code\GameServers\7day\Batch\*.ps1 C:\#servers\ /Y 
+        timeout 3
         ./7days.ps1
         exit
            }
     5 {
         Clear-Host
         Write-HostColored "Launching #green#Frozen Flames Server# + Updates."
-        timeout 2
+        xcopy C:\#Code\GameServers\Frozen\Batch\*.ps1 C:\#servers\ /Y 
+        timeout 3
         ./Frozen.ps1
         exit
       }  
     6 {
         Clear-Host
         Write-HostColored "Launching #green#Craftopia Server# + Updates."
-        timeout 2
+        timeout 3
         ./craftopia.bat
         exit
       }  
     7 {
         Clear-Host
         Write-HostColored "Launching #green#Core-Keeper Server# + Updates."
-        timeout 2
+        timeout 3
         ./Core-Keeper.bat
         exit
       }
     8 {
         Clear-Host
         Write-HostColored "Launching #green#Insurgency Sandstorm Server# + Updates."
-        timeout 2
+        timeout 3
         ./Insurgency.bat
         exit
       }  
     9 {
         Clear-Host
         Write-HostColored "Launching #green#Valheim Server# + Updates."
-        timeout 2
+        timeout 3
         ./Valheim.ps1
         exit
       }
     10 {
         Clear-Host
         Write-HostColored "Launching #green#The Forest Server# + Updates."
-        timeout 2
+        timeout 3
         ./the-forest.ps1
         exit
       } 
     11 {
         Clear-Host
         Write-HostColored "Launching #green#Rust Server# + Updates."
-        timeout 2
+        timeout 3
         ./rust.ps1
         exit
       }    
     12 {
         Clear-Host
         Write-HostColored "Launching #green#No One Survived Server# + Updates."
-        timeout 2
+        xcopy C:\#Code\GameServers\NOS\Batch\*.ps1 C:\#servers\ /Y 
+        timeout 3
         ./No-one-survived.ps1
         exit
       }         
