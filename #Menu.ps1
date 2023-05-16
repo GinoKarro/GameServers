@@ -12,10 +12,6 @@ function Write-HostColored() {
     )
 
     begin {
-        # If text was given as an operand, it'll be an array.
-        # Like Write-Host, we flatten the array into a single string
-        # using simple string interpolation (which defaults to separating elements with a space,
-        # which can be changed by setting $OFS).
         if ($Text -ne $null) {
             $Text = "$Text"
         }
@@ -23,23 +19,13 @@ function Write-HostColored() {
 
     process {
         if ($Text) {
-
-            # Start with the foreground and background color specified via
-            # -ForegroundColor / -BackgroundColor, or the current defaults.
             $curFgColor = $ForegroundColor
             $curBgColor = $BackgroundColor
-
-            # Split message into tokens by '#'.
-            # A token between to '#' instances is either the name of a color or text to write (in the color set by the previous token).
-            $tokens = $Text.split("#")
-
-            # Iterate over tokens.            
+            $tokens = $Text.split("#")          
             $prevWasColorSpec = $false
             foreach($token in $tokens) {
 
-                if (-not $prevWasColorSpec -and $token -match '^([a-z]+)(:([a-z]+))?$') { # a potential color spec.
-                    # If a token is a color spec, set the color for the next token to write.
-                    # Color spec can be a foreground color only (e.g., 'green'), or a foreground-background color pair (e.g., 'green:white')
+                if (-not $prevWasColorSpec -and $token -match '^([a-z]+)(:([a-z]+))?$') { 
                     try {
                         $curFgColor = [ConsoleColor]  $matches[1]
                         $prevWasColorSpec = $true
@@ -58,25 +44,16 @@ function Write-HostColored() {
                 $prevWasColorSpec = $false
 
                 if ($token) {
-                    # A text token: write with (with no trailing line break).
-                    # !! In the ISE - as opposed to a regular PowerShell console window,
-                    # !! $host.UI.RawUI.ForegroundColor and $host.UI.RawUI.ForegroundColor inexcplicably 
-                    # !! report value -1, which causes an error when passed to Write-Host.
-                    # !! Thus, we only specify the -ForegroundColor and -BackgroundColor parameters
-                    # !! for values other than -1.
                     $argsHash = @{}
                     if ([int] $curFgColor -ne -1) { $argsHash += @{ 'ForegroundColor' = $curFgColor } }
                     if ([int] $curBgColor -ne -1) { $argsHash += @{ 'BackgroundColor' = $curBgColor } }
                     Write-Host -NoNewline @argsHash $token
                 }
-
-                # Revert to default colors.
                 $curFgColor = $ForegroundColor
                 $curBgColor = $BackgroundColor
 
             }
         }
-        # Terminate with a newline, unless suppressed
         if (-not $NoNewLine) { write-host }
     }
 }
