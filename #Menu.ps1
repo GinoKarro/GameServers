@@ -1,3 +1,6 @@
+###########################################################################################################
+###Text Color module.
+
 function Write-HostColored() {
     [CmdletBinding(ConfirmImpact='None', SupportsShouldProcess=$false, SupportsTransactions=$false)]
     param(
@@ -57,6 +60,8 @@ function Write-HostColored() {
         if (-not $NoNewLine) { write-host }
     }
 }
+########################################################################################
+### Start of Script.
 
 xcopy C:\#Code\GameServers\V-Rising\Batch\*.ps1 C:\#servers\ /Y 
 xcopy C:\#Code\GameServers\NOS\Batch\*.ps1 C:\#servers\ /Y 
