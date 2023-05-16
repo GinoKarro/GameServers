@@ -14,7 +14,9 @@ rem -dedicated                    : Has to be the last option to start the dedic
 
 echo|set /p="251570" > steam_appid.txt
 
-start C:\#servers\7days\7DaysToDieServer.exe -quit -batchmode -nographics -configfile=serverconfig.xml -dedicated
+start C:\#servers\7days\7DaysToDieServer.exe -quit -batchmode -nographics -SaveGameFolder=C:\#servers\#Save\7Days\Save-Data -configfile=serverconfig.xml -dedicated
+
+SaveGameFolder
 
 echo Wait until game started
 timeout 15
