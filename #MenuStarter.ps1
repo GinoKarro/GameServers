@@ -109,6 +109,7 @@ Write-HostColored "#green#Syncing #red# Github #green#files #." -NoNewline
 timeout 2
 Set-Location C:\#Code\GameServers
 git pull origin main
+timeout 15
 Clear-Host
 Write-HostColored "#green#Update #red# Menu Script #green#and then launch it #." -NoNewline
 timeout 2
