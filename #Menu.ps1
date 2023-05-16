@@ -142,7 +142,7 @@ Switch ($Select)
         Write-HostColored "Launching #green#7Days to die Server# + Updates."
         timeout 2
         ./7days.ps1
-        exit
+        pause
            }
     5 {
         Clear-Host
