@@ -140,7 +140,7 @@ Switch ($Select)
         Clear-Host
         Write-HostColored "Launching #green#7Days to die Server# + Updates."
         timeout 2
-        ./Ark.bat
+        ./7days.ps1
         exit
            }
     5 {
