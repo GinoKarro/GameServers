@@ -6,7 +6,7 @@ Simply clone the repo and run this command using Powershell :
     ./#MenuStarter.ps1
 
 Then, follow the instruction.
-
+---
 ## Prerequisite
 
 Before Running the main script, you need to make sure that theese are installed :
