@@ -1,6 +1,6 @@
 # Tusk Game Menu Starter
 
-Simply run this command using Powershell :
+Simply clone the repo and run this command using Powershell :
 
     #This Starts the menu launcher.
     ./#MenuStarter.ps1
