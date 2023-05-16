@@ -70,15 +70,15 @@ If (Test-Path -Path C:\#servers\Steamcmd\steamcmd.exe ) {
     #Download
     Clear-Host
     Write-HostColored "#green#SteamCMD is not installed#." -NoNewline
-    timeout 2
+    timeout 3
     Clear-Host
     Write-HostColored "#green#Creating installation DIR#." -NoNewline
-    timeout 2
+    timeout 3
     mkdir C:\#servers\Steamcmd\
     set-location C:\#servers\Steamcmd\
     Clear-Host
     Write-HostColored "#green#Downloading #red# SteamCMD#." -NoNewline
-    timeout 2
+    timeout 3
     $url = "https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip"
     $destination = "C:\#servers\Steamcmd\steamcmd.zip"
     # Download the file
@@ -92,26 +92,26 @@ If (Test-Path -Path C:\#servers\Steamcmd\steamcmd.exe ) {
     }
     Clear-Host
     Write-HostColored "#green#Unzipping #red# SteamCMD#." -NoNewline
-    timeout 2
+    timeout 3
     Unzip "C:\#servers\Steamcmd\steamcmd.zip" "C:\#servers\Steamcmd\"
 }
 ##########################################################################################
 Clear-Host
 Write-HostColored "#green#Removing Archive of #red# SteamCMD.zip#." -NoNewline
-timeout 2
+timeout 3
 Remove-Item -Path C:\#servers\Steamcmd\steamcmd.zip -Force  -ErrorAction SilentlyContinue
 Clear-Host
 Write-HostColored "#green#Updating #red# SteamCMD#." -NoNewline
-timeout 2
+timeout 3
 start-process "C:\#Code\GameServers\UpdateSteamCMD.bat" -wait
 Clear-Host
 Write-HostColored "#green#Syncing #red# Github #green#files #." -NoNewline
-timeout 2
+timeout 3
 Set-Location C:\#Code\GameServers
 git pull origin main
-timeout 5
+timeout 3
 Clear-Host
 Write-HostColored "#green#Update #red# Menu Script #green#and then launch it #." -NoNewline
-timeout 2
+timeout 3
 xcopy C:\#Code\GameServers\#Menu.ps1 C:\#servers\ /Y
 C:\#servers\#Menu.ps1
