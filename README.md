@@ -4,7 +4,7 @@ This is a simple menu to install any game servers you want and it uses github as
 Manager. You can centralize all your server configs in github. It uses SteamCMD to manage
 and update the game servers.
 ***
-## How to:
+## How to
 ---
 Simply clone the repo and run this command using Powershell :
 
