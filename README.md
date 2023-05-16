@@ -6,7 +6,7 @@ and update the game servers.
 ***
 ## How to
 
-Simply clone the repo and run this command using Powershell :
+Simply clone the repo in *C:/Code* and run this command using Powershell :
 
     #This Starts the menu launcher.
     ./#MenuStarter.ps1
