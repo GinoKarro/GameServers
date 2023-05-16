@@ -14,7 +14,7 @@ Simply clone the repo and run this command using Powershell :
 Then, follow the instruction.
 ***
 ### Prerequisite
-
+---
 Before Running the main script, you need to make sure that those Microsoft Components are installed :
 
 - Microsoft Visual c++ 2015.
