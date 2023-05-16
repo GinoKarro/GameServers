@@ -62,8 +62,6 @@ function Write-HostColored() {
 }
 ########################################################################################
 ### Start of Script.
-
-
 If (Test-Path -Path C:\#servers\Steamcmd\steamcmd.exe ) {
     Clear-Host
     Write-HostColored " #cyan# SteamCMD Already installed # ." -NoNewline
@@ -97,6 +95,7 @@ If (Test-Path -Path C:\#servers\Steamcmd\steamcmd.exe ) {
     timeout 2
     Unzip "C:\#servers\Steamcmd\steamcmd.zip" "C:\#servers\Steamcmd\"
 }
+##########################################################################################
 Clear-Host
 Write-HostColored "#cyan# Removing Archive of #red# SteamCMD.zip # ." -NoNewline
 timeout 2
