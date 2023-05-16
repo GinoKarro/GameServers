@@ -17,6 +17,6 @@ Then, follow the instruction.
 
 Before Running the main script, you need to make sure that those Microsoft Components are installed :
 
-- Microsoft Visual c++ 2015.
-- Microsoft Direct X end user.
+- [Microsoft Visual c++ 2015.](https://www.microsoft.com/en-ca/download/details.aspx?id=48145)
+- [Microsoft Direct X end user.](https://www.microsoft.com/en-ca/download/details.aspx?id=35)
 ---
