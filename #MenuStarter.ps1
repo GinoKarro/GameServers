@@ -63,21 +63,22 @@ function Write-HostColored() {
 ########################################################################################
 ### Start of Script.
 
+
 If (Test-Path -Path C:\#servers\Steamcmd\steamcmd.exe ) {
     Clear-Host
-    Write-Host "#cyan# SteamCMD Already installed # ." -NoNewline
+    Write-HostColored " #cyan# SteamCMD Already installed # ." -NoNewline
     timeout 3
 }else {
     #Download
     Clear-Host
-    Write-Host "#cyan# SteamCMD is not installed # ." -NoNewline
+    Write-HostColored "#cyan# SteamCMD is not installed # ." -NoNewline
     timeout 2
     Clear-Host
-    Write-Host "#cyan# Creating installation DIR # ." -NoNewline
+    Write-HostColored "#cyan# Creating installation DIR # ." -NoNewline
     mkdir C:\#servers\Steamcmd\
     set-location C:\#servers\Steamcmd\
     Clear-Host
-    Write-Host "#cyan# Downloading #red# SteamCMD # ." -NoNewline
+    Write-HostColored "#cyan# Downloading #red# SteamCMD # ." -NoNewline
     timeout 2
     $url = "https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip"
     $destination = "C:\#servers\Steamcmd\steamcmd.zip"
@@ -91,25 +92,25 @@ If (Test-Path -Path C:\#servers\Steamcmd\steamcmd.exe ) {
     [System.IO.Compression.ZipFile]::ExtractToDirectory($zipfile, $outpath)
     }
     Clear-Host
-    Write-Host "#cyan# Unzipping #red# SteamCMD # ." -NoNewline
+    Write-HostColored "#cyan# Unzipping #red# SteamCMD # ." -NoNewline
     timeout 2
     Unzip "C:\#servers\Steamcmd\steamcmd.zip" "C:\#servers\Steamcmd\"
 }
 Clear-Host
-Write-Host "#cyan# Removing Archive of #red# SteamCMD.zip # ." -NoNewline
+Write-HostColored "#cyan# Removing Archive of #red# SteamCMD.zip # ." -NoNewline
 timeout 2
 Remove-Item -Path C:\#servers\Steamcmd\steamcmd.zip -Force  -ErrorAction SilentlyContinue
 Clear-Host
-Write-Host "#cyan# Updating #red# SteamCMD # ." -NoNewline
+Write-HostColored "#cyan# Updating #red# SteamCMD # ." -NoNewline
 timeout 2
 start-process "C:\#Code\GameServers\UpdateSteamCMD.bat" -wait
 Clear-Host
-Write-Host "#cyan# Syncing #red# Github #cyan# files  # ." -NoNewline
+Write-HostColored "#cyan# Syncing #red# Github #cyan# files  # ." -NoNewline
 timeout 2
 Set-Location C:\#Code\GameServers
 git pull origin main
 Clear-Host
-Write-Host "#cyan# Update #red# Menu Script #cyan# and then launch it  # ." -NoNewline
+Write-HostColored "#cyan# Update #red# Menu Script #cyan# and then launch it  # ." -NoNewline
 timeout 2
 xcopy C:\#Code\GameServers\#Menu.ps1 C:\#servers\ /Y
 C:\#servers\#Menu.ps1
