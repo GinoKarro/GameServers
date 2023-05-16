@@ -1,8 +1,6 @@
 # Tusk Game Menu Starter
 
-Simply run :
-
-Powershell :
+Simply run this command using Powershell :
 
     // This Starts the menu launcher.
     ./#MenuStarter.ps1
