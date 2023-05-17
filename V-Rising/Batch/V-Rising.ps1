@@ -4,4 +4,4 @@ xcopy C:\#Code\GameServers\V-Rising\CFG\* C:\#servers\v-rising\VRisingServer_Dat
 timeout 5
 Clear-Host
 Write-Output "Starting V Rising Dedicated Server on port : 9876,9877 - PRESS CTRL-C to exit"
-C:\#servers\v-rising\VRisingServer.exe -persistentDataPath C:\#servers\#Save\v-rising\save-data -serverName "-=QC PVE=- Virgin Tusk Rising" -saveName "TuskGG" -logFile "C:\#servers\#Save\v-rising\logs\VRisingServer.log"
+C:\#servers\v-rising\VRisingServer.exe -persistentDataPath C:\#servers\#Save\v-rising\save-data -serverName "-=QC PVE=- Gloomrot Tusk Rising" -saveName "TuskGG" -logFile "C:\#servers\#Save\v-rising\logs\VRisingServer.log"
