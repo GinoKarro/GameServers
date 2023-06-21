@@ -76,7 +76,7 @@ Write-HostColored  " #blue# 3.#) #magenta#Ark# Server."
 Write-HostColored  " #blue# 4.#) #green#7DaysToDie# Server."
 Write-HostColored  " #blue# 5.#) #magenta#Frozen Flames# Server."
 Write-HostColored  " #blue# 6.#) #green#Craftopia# Server."
-Write-HostColored  " #blue# 7.#) #magenta#Core Keeper# Server."
+Write-HostColored  " #blue# 7.#) #magenta#Day of Defeat Source# Server."
 Write-HostColored  " #blue# 8.#) #green#Insurgency Sandstorm# Server."
 Write-HostColored  " #blue# 9.#) #magenta#Valheim# Server."
 Write-HostColored  "#blue# 10.#) #green#The Forest# Server."
@@ -140,9 +140,9 @@ Switch ($Select)
       }  
     7 {
         Clear-Host
-        Write-HostColored "Launching #green#Core-Keeper Server# + Updates."
+        Write-HostColored "Launching #green#Day of Defeat Source Server# + Updates."
         timeout 3
-        ./Core-Keeper.bat
+        ./DoD.ps1
         exit
       }
     8 {
