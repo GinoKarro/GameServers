@@ -3,8 +3,8 @@
 	<!-- GENERAL SERVER SETTINGS -->
 
 	<!-- Server representation -->
-	<property name="ServerName"						value="My Game Host"/>		<!-- Whatever you want the name of the server to be. -->
-	<property name="ServerDescription"				value="A 7 Days to Die server"/>	<!-- Whatever you want the server description to be, will be shown in the server browser. -->
+	<property name="ServerName"						value="7 Tusks to Die"/>		<!-- Whatever you want the name of the server to be. -->
+	<property name="ServerDescription"				value="A 7 Tusk to Die server"/>	<!-- Whatever you want the server description to be, will be shown in the server browser. -->
 	<property name="ServerWebsiteURL"				value=""/>					<!-- Website URL for the server, will be shown in the serverbrowser as a clickable link -->
 	<property name="ServerPassword"					value=""/>					<!-- Password to gain entry to the server -->
 	<property name="ServerLoginConfirmationText"	value="" />					<!-- If set the user will see the message during joining the server and has to confirm it before continuing. For more complex changes to this window you can change the "serverjoinrulesdialog" window in XUi -->
@@ -25,9 +25,9 @@
 	<property name="ServerAdminSlotsPermission"		value="0"/>					<!-- Required permission level to use the admin slots above -->
 
 	<!-- Admin interfaces -->
-	<property name="ControlPanelEnabled"			value="false"/>				<!-- Enable/Disable the web control panel -->
-	<property name="ControlPanelPort"				value="8080"/>				<!-- Port of the control panel webpage -->
-	<property name="ControlPanelPassword"			value="CHANGEME"/>			<!-- Password to gain entry to the control panel -->
+	<property name="ControlPanelEnabled"			value="true"/>				<!-- Enable/Disable the web control panel -->
+	<property name="ControlPanelPort"				value="8082"/>				<!-- Port of the control panel webpage -->
+	<property name="ControlPanelPassword"			value="121121*Alainestb"/>			<!-- Password to gain entry to the control panel -->
 
 	<property name="TelnetEnabled"					value="true"/>				<!-- Enable/Disable the telnet -->
 	<property name="TelnetPort"						value="8081"/>				<!-- Port of the telnet server -->
@@ -39,24 +39,24 @@
 
 	<!-- Folder and file locations -->
 	<property name="AdminFileName"					value="serveradmin.xml"/>	<!-- Server admin file name. Path relative to the SaveGameFolder -->
-	<!-- <property name="UserDataFolder"				value="absolute path" /> -->	<!-- Use this to override where the server stores all generated data, including RWG generated worlds. Do not forget to uncomment the entry! -->
-	<!-- <property name="SaveGameFolder"				value="absolute path" /> -->	<!-- Use this to only override the save game path. Do not forget to uncomment the entry! -->
+	<property name="UserDataFolder"				value="C:\#servers\#Save\7Days\UserData\" />	<!-- Use this to override where the server stores all generated data, including RWG generated worlds. Do not forget to uncomment the entry! -->
+	<property name="SaveGameFolder"				value="C:\#servers\#Save\7Days\SaveData\" /> 	<!-- Use this to only override the save game path. Do not forget to uncomment the entry! -->
 
 	<!-- Other technical settings -->
-	<property name="EACEnabled"						value="true"/>				<!-- Enables/Disables EasyAntiCheat -->
+	<property name="EACEnabled"						value="false"/>				<!-- Enables/Disables EasyAntiCheat -->
 	<property name="HideCommandExecutionLog"		value="0"/>					<!-- Hide logging of command execution. 0 = show everything, 1 = hide only from Telnet/ControlPanel, 2 = also hide from remote game clients, 3 = hide everything -->
 	<property name="MaxUncoveredMapChunksPerPlayer"	value="131072"/>			<!-- Override how many chunks can be uncovered on the ingame map by each player. Resulting max map file size limit per player is (x * 512 Bytes), uncovered area is (x * 256 m²). Default 131072 means max 32 km² can be uncovered at any time -->
-	<property name="PersistentPlayerProfiles"		value="false" />			<!-- If disabled a player can join with any selected profile. If true they will join with the last profile they joined with -->
+	<property name="PersistentPlayerProfiles"		value="True" />			<!-- If disabled a player can join with any selected profile. If true they will join with the last profile they joined with -->
 
 
 
 	<!-- GAMEPLAY -->
 	
 	<!-- World -->
-	<property name="GameWorld"						value="Navezgane"/>			<!-- "RWG" (see WorldGenSeed and WorldGenSize options below) or any already existing world name in the Worlds folder (currently shipping with e.g. "Navezgane", "PREGEN01", ...) -->
-	<property name="WorldGenSeed"					value="asdf"/>				<!-- If RWG this is the seed for the generation of the new world. If a world with the resulting name already exists it will simply load it -->
-	<property name="WorldGenSize"					value="6144"/>				<!-- If RWG this controls the width and height of the created world. It is also used in combination with WorldGenSeed to create the internal RWG seed thus also creating a unique map name even if using the same WorldGenSeed. Has to be a multiple of 2048 between 2048 and 16384, though large map sizes will take long to generate / download / load -->
-	<property name="GameName"						value="My Game"/>			<!-- Whatever you want the game name to be. This affects the save game name as well as the seed used when placing decoration (trees etc) in the world. It does not control the generic layout of the world if creating an RWG world -->
+	<property name="GameWorld"						value="TuskWrold"/>			<!-- "RWG" (see WorldGenSeed and WorldGenSize options below) or any already existing world name in the Worlds folder (currently shipping with e.g. "Navezgane", "PREGEN01", ...) -->
+	<property name="WorldGenSeed"					value="bsdudernd"/>				<!-- If RWG this is the seed for the generation of the new world. If a world with the resulting name already exists it will simply load it -->
+	<property name="WorldGenSize"					value="10144"/>				<!-- If RWG this controls the width and height of the created world. It is also used in combination with WorldGenSeed to create the internal RWG seed thus also creating a unique map name even if using the same WorldGenSeed. Has to be a multiple of 2048 between 2048 and 16384, though large map sizes will take long to generate / download / load -->
+	<property name="GameName"						value="7 Tusk"/>			<!-- Whatever you want the game name to be. This affects the save game name as well as the seed used when placing decoration (trees etc) in the world. It does not control the generic layout of the world if creating an RWG world -->
 	<property name="GameMode"						value="GameModeSurvival"/>	<!-- GameModeSurvival -->
 
 	<!-- Difficulty -->
@@ -64,7 +64,7 @@
 	<property name="BlockDamagePlayer"				value="100" />				<!-- How much damage do players to blocks (percentage in whole numbers) -->
 	<property name="BlockDamageAI"					value="100" />				<!-- How much damage do AIs to blocks (percentage in whole numbers) -->
 	<property name="BlockDamageAIBM"				value="100" />				<!-- How much damage do AIs during blood moons to blocks (percentage in whole numbers) -->
-	<property name="XPMultiplier"					value="100" />				<!-- XP gain multiplier (percentage in whole numbers) -->
+	<property name="XPMultiplier"					value="150" />				<!-- XP gain multiplier (percentage in whole numbers) -->
 	<property name="PlayerSafeZoneLevel"			value="5" />				<!-- If a player is less or equal this level he will create a safe zone (no enemies) when spawned -->
 	<property name="PlayerSafeZoneHours"			value="5" />				<!-- Hours in world time this safe zone exists -->
 
@@ -96,17 +96,17 @@
 	<property name="BloodMoonEnemyCount"			value="8" />				<!-- This is the number of zombies that can be alive (spawned at the same time) at any time PER PLAYER during a blood moon horde, however, MaxSpawnedZombies overrides this number in multiplayer games. Also note that your game stage sets the max number of zombies PER PARTY. Low game stage values can result in lower number of zombies than the BloodMoonEnemyCount setting. Changing this setting has a huge impact on performance. -->
 
 	<!-- Loot -->
-	<property name="LootAbundance"					value="100" />				<!-- percentage in whole numbers -->
-	<property name="LootRespawnDays"				value="7" />				<!-- days in whole numbers -->
-	<property name="AirDropFrequency"				value="72"/>				<!-- How often airdrop occur in game-hours, 0 == never -->
-	<property name="AirDropMarker"					value="false"/>				<!-- Sets if a marker is added to map/compass for air drops. -->
+	<property name="LootAbundance"					value="175" />				<!-- percentage in whole numbers -->
+	<property name="LootRespawnDays"				value="3" />				<!-- days in whole numbers -->
+	<property name="AirDropFrequency"				value="30"/>				<!-- How often airdrop occur in game-hours, 0 == never -->
+	<property name="AirDropMarker"					value="true"/>				<!-- Sets if a marker is added to map/compass for air drops. -->
 
 	<!-- Multiplayer -->
 	<property name="PartySharedKillRange"			value="100"/>				<!-- The distance you must be within to receive party shared kill xp and quest party kill objective credit. -->
 	<property name="PlayerKillingMode"				value="3" />				<!-- Player Killing Settings (0 = No Killing, 1 = Kill Allies Only, 2 = Kill Strangers Only, 3 = Kill Everyone) -->
 
 	<!-- Land claim options -->
-	<property name="LandClaimCount"					value="1"/>					<!-- Maximum allowed land claims per player. -->
+	<property name="LandClaimCount"					value="5"/>					<!-- Maximum allowed land claims per player. -->
 	<property name="LandClaimSize"					value="41"/>				<!-- Size in blocks that is protected by a keystone -->
 	<property name="LandClaimDeadZone"				value="30"/>				<!-- Keystones must be this many blocks apart (unless you are friends with the other player) -->
 	<property name="LandClaimExpiryTime"			value="7"/>					<!-- The number of real world days a player can be offline before their claims expire and are no longer protected -->
