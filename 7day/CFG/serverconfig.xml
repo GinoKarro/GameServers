@@ -27,7 +27,7 @@
 	<!-- Admin interfaces -->
 	<property name="ControlPanelEnabled"			value="true"/>				<!-- Enable/Disable the web control panel -->
 	<property name="ControlPanelPort"				value="8084"/>				<!-- Port of the control panel webpage -->
-	<property name="ControlPanelPassword"			value="121121*Alainestb"/>			<!-- Password to gain entry to the control panel -->
+	<property name="ControlPanelPassword"			value="*Ginette12"/>			<!-- Password to gain entry to the control panel -->
 
 	<property name="TelnetEnabled"					value="true"/>				<!-- Enable/Disable the telnet -->
 	<property name="TelnetPort"						value="8081"/>				<!-- Port of the telnet server -->
@@ -39,8 +39,8 @@
 
 	<!-- Folder and file locations -->
 	<property name="AdminFileName"					value="serveradmin.xml"/>	<!-- Server admin file name. Path relative to the SaveGameFolder -->
-	<property name="UserDataFolder"				value="C:\#servers\#Save\7Days\UserData\" />	<!-- Use this to override where the server stores all generated data, including RWG generated worlds. Do not forget to uncomment the entry! -->
-	<property name="SaveGameFolder"				value="C:\#servers\#Save\7Days\SaveData\" /> 	<!-- Use this to only override the save game path. Do not forget to uncomment the entry! -->
+	<!--<property name="UserDataFolder"				value="C:\#servers\#Save\7Days\UserData\" />-->	<!-- Use this to override where the server stores all generated data, including RWG generated worlds. Do not forget to uncomment the entry! -->
+	<!--<property name="SaveGameFolder"				value="C:\#servers\#Save\7Days\SaveData\" /> -->	<!-- Use this to only override the save game path. Do not forget to uncomment the entry! -->
 
 	<!-- Other technical settings -->
 	<property name="EACEnabled"						value="false"/>				<!-- Enables/Disables EasyAntiCheat -->
