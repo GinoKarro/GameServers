@@ -8,7 +8,7 @@
 	<property name="ServerWebsiteURL"				value=""/>					<!-- Website URL for the server, will be shown in the serverbrowser as a clickable link -->
 	<property name="ServerPassword"					value=""/>					<!-- Password to gain entry to the server -->
 	<property name="ServerLoginConfirmationText"	value="" />					<!-- If set the user will see the message during joining the server and has to confirm it before continuing. For more complex changes to this window you can change the "serverjoinrulesdialog" window in XUi -->
-	<property name="Region"							value="NorthAmericaEast" />	<!-- The region this server is in. Values: NorthAmericaEast, NorthAmericaWest, CentralAmerica, SouthAmerica, Europe, Russia, Asia, MiddleEast, Africa, Oceania -->
+	<property name="Region"							value="Cameroune nord" />	<!-- The region this server is in. Values: NorthAmericaEast, NorthAmericaWest, CentralAmerica, SouthAmerica, Europe, Russia, Asia, MiddleEast, Africa, Oceania -->
 	<property name="Language"						value="English" />			<!-- Primary language for players on this server. Values: Use any language name that you would users expect to search for. Should be the English name of the language, e.g. not "Deutsch" but "German" -->
 
 	<!-- Networking -->
@@ -18,7 +18,7 @@
 	<property name="ServerMaxWorldTransferSpeedKiBs" value="512"/>				<!-- Maximum (!) speed in kiB/s the world is transferred at to a client on first connect if it does not have the world yet. Maximum is about 1300 kiB/s, even if you set a higher value. -->
 
 	<!-- Slots -->
-	<property name="ServerMaxPlayerCount"			value="8"/>					<!-- Maximum Concurrent Players -->
+	<property name="ServerMaxPlayerCount"			value="25"/>					<!-- Maximum Concurrent Players -->
 	<property name="ServerReservedSlots"			value="0"/>					<!-- Out of the MaxPlayerCount this many slots can only be used by players with a specific permission level -->
 	<property name="ServerReservedSlotsPermission"	value="100"/>				<!-- Required permission level to use reserved slots above -->
 	<property name="ServerAdminSlots"				value="0"/>					<!-- This many admins can still join even if the server has reached MaxPlayerCount -->
