@@ -73,5 +73,6 @@
   </whitelist>
   <blacklist>
     <!-- <blacklisted steamID="" name="" unbandate="" reason="" /> -->
+    <blacklisted steamID="76561198805367816" name="OneNutJim" unbandate="2030-12-19 23:27:35" reason="Lack of Balls" />
   </blacklist>
 </adminTools>
