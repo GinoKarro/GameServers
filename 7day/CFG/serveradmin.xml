@@ -42,7 +42,8 @@
 <adminTools>
   <admins>
     <user steamID="76561198103052471" name="Mr.Tusk" permission_level="0" />
-    <user steamID="76561198103052471" permission_level="0" />  
+    <user steamID="76561198032981862" name="Bibo" permission_level="0" />
+    <user steamID="76561198196126941" name="Lee" permission_level="0" />
     <!-- <group steamID="103582791434672565" name="Steam Universe" permission_level_default="1000" permission_level_mod="0" /> -->
   </admins>
   <permissions>
